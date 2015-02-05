@@ -7,7 +7,8 @@ var Schema = mongoose.Schema;
  * email {String}    - the user's email
  */
 var userSchema = new Schema({
-  // Implement
+  username: String,
+  email: String
 });
 
 var User = mongoose.model('Users', userSchema);
