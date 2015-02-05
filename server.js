@@ -8,6 +8,8 @@ var app = express();
 
 app.use(logger('dev'));
 
+// Added for sending x-www-form-urlencoded values in Postman
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.connect(config.MONGO_URL);
