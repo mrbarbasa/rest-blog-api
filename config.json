@@ -1,0 +1,4 @@
+{
+  "MONGO_URL": "mongodb://localhost/rest-blog-api",
+  "port": 4000
+}
